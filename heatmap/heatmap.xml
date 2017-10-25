@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<tool id="heatmap" name="HeatMap" version="1.0" hidden="false">
+    <description>
+    </description>
+    <command interpreter="Rscript">
+        heatmap.R --input=$input_table --output=$output
+    </command>
+
+    <inputs>
+        <param format="tabular" name="input_table" type="data" label="Input table"/>
+    </inputs>
+
+    <outputs>
+        <data format="pdf" name="output" label="HeatMap"/>
+    </outputs>
+
+    <help>
+        ** What it does **
+        This tool creates a heatmap of the input data.
+    </help>
+</tool>
